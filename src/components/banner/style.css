@@ -1,0 +1,12 @@
+.slick-prev:before {
+  /* Important to override existing styles */
+}
+.slick-next:before {
+  display: none !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: "";
+  opacity: 0;
+}
