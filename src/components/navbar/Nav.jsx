@@ -1,16 +1,16 @@
 import logo from "./../../assets/images/logo.png";
-
+import "./style/style.css";
 const Nav = () => {
   return (
     <div className="">
-      <div className="navbar bg-transparent absolute top-0 left-0 right-0 pt-6 z-20 container mx-auto max-w-[1400px] w-[100%] lg:w-[88%] lg:mx-auto px-0 pb-0">
+      <div className="navbar bg-transparent absolute top-0 left-0 right-0 md:pt-6 pt-3 z-20 container mx-auto max-w-[1400px] w-[100%] lg:w-[88%] lg:mx-auto md:px-0 px-2 pb-0">
         <div className=" flex mr-6">
           <a className="">
-            <img src={logo} alt="Logo" />
+            <img className="lg:w-36 md:w-28 w-16" src={logo} alt="Logo" />
           </a>
         </div>
         <div className="flex-1">
-          <button className="btn btn-square btn-ghost rounded-full">
+          <button className="btn btn-square btn-ghost w-7 md:w-12 rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="50"
@@ -32,11 +32,11 @@ const Nav = () => {
             </svg>
           </button>
         </div>
-        <div className="flex gap-6">
-          <div className="flex items-center">
+        <div className="flex md:gap-6 gap-2">
+          <div className="flex items-center ">
             <a
               href="#_"
-              className="px-6 py-4 text-xl font-semibold text-center text-white transition duration-300 rounded-full ease md:w-auto flex items-center gap-2"
+              className="md:px-6 md:py-4 px-3 py-2 md:text-xl text-base font-semibold text-center text-white transition duration-300 rounded-full ease md:w-auto flex items-center gap-2"
               style={{
                 background:
                   " linear-gradient(92deg, #5A0DFF 0%, #FF29B8 38.6%, #FF581C 97.73%)",
@@ -64,14 +64,17 @@ const Nav = () => {
                   />
                 </svg>
               </span>
-              <span className="uppercase text-lg font-bold">subscribe now</span>
+              <span className="uppercase md:text-lg text-sm font-bold">
+                subscribe now
+              </span>
             </a>
           </div>
-          <div>
+          <div className="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="61"
               height="60"
+              className="custom-svg-size"
               viewBox="0 0 61 60"
               fill="none"
             >

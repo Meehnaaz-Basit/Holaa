@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+  .custom-svg-size {
+    width: 41px;
+    height: 40px;
+  }
+}
+@media (max-width: 450px) {
+  .custom-svg-size {
+    width: 31px;
+    height: 30px;
+  }
+}

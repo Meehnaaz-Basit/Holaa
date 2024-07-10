@@ -1,24 +1,26 @@
 import bannerLeftIcon from "./../../assets/images/file 1.png";
+import "./style/style.css";
 
 const BannerSlideElement = () => {
   return (
-    <div>
-      <div className="flex items-center justify-evenly max-w-6xl">
-        <div>
+    <div className="small-screen">
+      <div className="flex items-center justify-evenly lg:max-w-6xl md:max-w-4xl  ">
+        <div className="banner-small-screen-icon">
           <img
             src={bannerLeftIcon}
             className="lg:w-[420px] md:w-[300px] w-200px object-cover "
             alt=""
           />
         </div>
-        <div className="space-y-4 pb-20">
+
+        <div className="space-y-4 lg:pb-20 small-screen-banner-content">
           <div className="">
-            <h1 className="text-8xl uppercase font-extrabold ">
+            <h1 className="lg:text-8xl md:text-6xl text-5xl md:text-left text-center uppercase font-extrabold ">
               The Lord <br /> of The Rings
             </h1>
           </div>
-          <div className="flex items-center gap-3 font-secondary text-sm text-white">
-            <div className="flex items-center gap-1 px-4 py-2 rounded-3xl bg-white bg-opacity-5 border-white border-2 border-opacity-5 ">
+          <div className="flex items-center md:gap-3 gap-1 font-secondary text-sm text-white">
+            <div className="flex items-center gap-1 md:px-4 md:py-2 px-2 py-1 rounded-3xl bg-white bg-opacity-5 border-white border-2 border-opacity-5 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -33,7 +35,7 @@ const BannerSlideElement = () => {
               </svg>
               <span>4.9 Reviews</span>
             </div>
-            <div className="flex items-center gap-1  px-4 py-2 rounded-3xl bg-white bg-opacity-5 border-white border-2 border-opacity-5 ">
+            <div className="flex items-center gap-1  md:px-4 md:py-2 px-2 py-1 rounded-3xl bg-white bg-opacity-5 border-white border-2 border-opacity-5 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -48,7 +50,7 @@ const BannerSlideElement = () => {
               </svg>
               <span>02h 30m</span>
             </div>
-            <div className="flex items-center gap-1  px-4 py-2 rounded-3xl bg-white bg-opacity-5 border-white border-2 border-opacity-5 ">
+            <div className="flex items-center gap-1  md:px-4 md:py-2 px-2 py-1 rounded-3xl bg-white bg-opacity-5 border-white border-2 border-opacity-5 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -70,8 +72,8 @@ const BannerSlideElement = () => {
               directed.
             </p>
           </div>
-          <div className="flex items-center gap-5">
-            <div className="flex items-center gap-2 py-4 px-7 border-white border-opacity-10 border rounded-full transition-all duration-300 bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 cursor-pointer">
+          <div className="flex md:flex-row flex-col items-center  gap-5">
+            <div className="flex items-center gap-2 md:py-4 md:px-7 py-3 px-5 border-white border-opacity-10 border rounded-full transition-all duration-300 bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="13"
@@ -91,7 +93,7 @@ const BannerSlideElement = () => {
               </svg>
               <p className="uppercase font-bold">play trailer</p>
             </div>
-            <div className="flex items-center gap-2 py-4 px-7 border-white border-opacity-10 border rounded-full transition-all duration-300 hover:bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 cursor-pointer">
+            <div className="flex items-center  md:py-4 md:px-7 py-3 px-5 border-white border-opacity-10 border rounded-full transition-all duration-300 hover:bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="17"
