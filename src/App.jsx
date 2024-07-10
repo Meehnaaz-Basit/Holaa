@@ -15,7 +15,7 @@ function App() {
       <div>
         <Banner></Banner>
       </div>
-      <div className="relative -top-10 z-40">
+      <div className="relative lg:-top-10 -top-20 z-40">
         <Cards></Cards>
       </div>
       {/* <div>

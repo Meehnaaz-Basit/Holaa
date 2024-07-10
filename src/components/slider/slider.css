@@ -1,5 +1,5 @@
 .slick-prev:before {
-  font-size: 50px !important; /* Important to override existing styles */
+  font-size: 50px !important;
 }
 .slick-next:before {
   font-size: 50px !important;

@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import "./slider.css";
-
+import { IoIosArrowDropleftCircle } from "react-icons/io";
 import img1 from "./../../assets/images/slider1.png";
 import img2 from "./../../assets/images/slider2.png";
 import img3 from "./../../assets/images/slider3.png";
@@ -20,14 +20,22 @@ function SampleNextArrow(props) {
       style={{
         ...style,
         display: "block",
-        // background: "red",
+        // background: "white",
+        zIndex: "10",
         top: -80,
-        right: 90,
-        // fontSize: "40px",
-        // right: "unset",
+        right: 10,
+        left: 1400,
+        width: 40,
+
+        borderRadius: 100,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
       }}
       onClick={onClick}
-    />
+    >
+      <IoIosArrowDropleftCircle className=" text-3xl text-white" />
+    </div>
   );
 }
 
@@ -39,14 +47,20 @@ function SamplePrevArrow(props) {
       style={{
         ...style,
         display: "block",
-        // background: "green",
         top: -80,
         right: 160,
-        // fontSize: "40px",
+        width: 30,
+        borderRadius: 100,
+        zIndex: "10",
         left: "unset",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
       }}
       onClick={onClick}
-    />
+    >
+      <IoIosArrowDropleftCircle className=" text-3xl text-white" />
+    </div>
   );
 }
 

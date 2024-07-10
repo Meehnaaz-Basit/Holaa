@@ -1,6 +1,6 @@
 const SingleCard = ({ image, name, type }) => {
   return (
-    <div className="flex lg:flex-col md:flex-row md:gap-5 items-center lg:-mt-20 md:-mt-10 md:mb-20 ">
+    <div className="flex lg:flex-col md:flex-row flex-col md:gap-5 items-center lg:-mt-20 md:-mt-10 md:mb-20 ">
       <div>
         <img
           src={image}
@@ -9,9 +9,9 @@ const SingleCard = ({ image, name, type }) => {
         />
       </div>
       <div>
-        <h3 className="uppercase font-bold md:text-2xl">{name}</h3>
-        <div className="flex items-center lg:gap-3 md:gap-1 font-secondary lg:text-sm text-[#999]">
-          <div className="flex items-center lg:gap-1">
+        <h3 className="uppercase font-bold md:text-2xl text-3xl">{name}</h3>
+        <div className="flex items-center lg:gap-3 md:gap-1 gap-3 font-secondary lg:text-sm text-base text-[#999]">
+          <div className="flex items-center lg:gap-1 gap-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="14"
@@ -24,9 +24,9 @@ const SingleCard = ({ image, name, type }) => {
                 fill="#D27304"
               />
             </svg>
-            <span className="text-[12px]">9.5</span>
+            <span className="lg:text-[12px] text-base">9.5</span>
           </div>
-          <div className="flex items-center lg:gap-1">
+          <div className="flex items-center gap-1 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="14"
@@ -44,9 +44,9 @@ const SingleCard = ({ image, name, type }) => {
                 fill="white"
               />
             </svg>
-            <span className="text-[12px]">02h 30m</span>
+            <span className="lg:text-[12px] text-base">02h 30m</span>
           </div>
-          <div className="flex items-center lg:gap-1">
+          <div className="flex items-center gap-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="23"
@@ -109,11 +109,13 @@ const SingleCard = ({ image, name, type }) => {
                 </filter>
               </defs>
             </svg>
-            <span className="text-[12px]">4k Quality</span>
+            <span className="lg:text-[12px] text-base">4k Quality</span>
           </div>
         </div>
         <div>
-          <span className=" font-secondary text-sm text-[#999]">{type}</span>
+          <span className=" font-secondary md:text-sm text-base text-[#999]">
+            {type}
+          </span>
         </div>
       </div>
     </div>
