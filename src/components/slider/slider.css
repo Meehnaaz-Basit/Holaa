@@ -1,6 +1,157 @@
-.slick-prev:before {
-  font-size: 50px !important;
+@media (max-width: 769.9px) and (min-width: 670px) {
+  .custom-next-arrow {
+    left: 500px !important;
+  }
+
+  .custom-prev-arrow {
+    right: 150px;
+    left: unset;
+  }
 }
-.slick-next:before {
-  font-size: 50px !important;
+@media (max-width: 849.9px) and (min-width: 770px) {
+  .custom-next-arrow {
+    left: 700px !important;
+  }
+
+  .custom-prev-arrow {
+    right: 200px;
+    left: unset;
+  }
 }
+@media (max-width: 991.9px) and (min-width: 850px) {
+  .custom-next-arrow {
+    left: 800px !important;
+  }
+
+  .custom-prev-arrow {
+    right: 220px;
+    left: unset;
+  }
+}
+@media (max-width: 1023.9px) and (min-width: 992px) {
+  .custom-next-arrow {
+    left: 900px !important;
+  }
+
+  .custom-prev-arrow {
+    right: 220px;
+    left: unset;
+  }
+}
+@media (max-width: 1139.9px) and (min-width: 1024px) {
+  .custom-next-arrow {
+    left: 940px !important;
+  }
+
+  .custom-prev-arrow {
+    right: 220px;
+    left: unset;
+  }
+}
+@media (max-width: 1249.9px) and (min-width: 1140px) {
+  .custom-next-arrow {
+    left: 1050px !important;
+  }
+
+  .custom-prev-arrow {
+    right: 220px;
+    left: unset;
+  }
+}
+@media (max-width: 1349.9px) and (min-width: 1250px) {
+  .custom-next-arrow {
+    left: 1150px !important;
+  }
+
+  .custom-prev-arrow {
+    right: 220px;
+    left: unset;
+  }
+}
+@media (max-width: 1449.9px) and (min-width: 1350px) {
+  .custom-next-arrow {
+    left: 1250px !important;
+  }
+
+  .custom-prev-arrow {
+    right: 220px;
+    left: unset;
+  }
+}
+@media (max-width: 1599.9px) and (min-width: 1450px) {
+  .custom-next-arrow {
+    left: 1400px !important;
+  }
+
+  .custom-prev-arrow {
+    right: 220px;
+    left: unset;
+  }
+}
+
+@media (max-width: 1749.9px) and (min-width: 1600px) {
+  .custom-next-arrow {
+    left: 1500px !important;
+  }
+
+  .custom-prev-arrow {
+    right: 300px;
+    left: unset;
+  }
+}
+@media (max-width: 1800px) and (min-width: 1750px) {
+  .custom-next-arrow {
+    right: unset;
+    left: 1520px !important;
+  }
+
+  .custom-prev-arrow {
+    right: 300px;
+    left: unset;
+  }
+}
+
+/* slider.css */
+
+.custom-next-arrow,
+.custom-prev-arrow {
+  display: block !important;
+  background: none !important;
+  border: none !important;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  top: -80px;
+  position: absolute;
+}
+
+/* Responsive styles */
+/* @media screen and (max-width: 1400px) {
+  .custom-next-arrow {
+    right: 30px;
+  }
+  .custom-prev-arrow {
+    left: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .custom-next-arrow {
+    right: 20px;
+  }
+  .custom-prev-arrow {
+    left: 20px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .custom-next-arrow {
+    right: 10px;
+  }
+  .custom-prev-arrow {
+    left: 10px;
+  }
+} */

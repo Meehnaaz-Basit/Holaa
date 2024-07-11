@@ -3,7 +3,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import "./slider.css";
-import { IoIosArrowDropleftCircle } from "react-icons/io";
+import {
+  IoIosArrowDropleftCircle,
+  IoIosArrowDroprightCircle,
+} from "react-icons/io";
 import img1 from "./../../assets/images/slider1.png";
 import img2 from "./../../assets/images/slider2.png";
 import img3 from "./../../assets/images/slider3.png";
@@ -16,25 +19,25 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={className}
-      style={{
-        ...style,
-        display: "block",
-        // background: "white",
-        zIndex: "10",
-        top: -80,
-        right: 10,
-        left: 1400,
-        width: 40,
-
-        borderRadius: 100,
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
+      className={`${className} custom-next-arrow`}
+      style={
+        {
+          // ...style,
+          // display: "block",
+          // zIndex: "10",
+          // top: -80,
+          // right: 10,
+          // left: 1400,
+          // width: 40,
+          // borderRadius: 100,
+          // display: "flex",
+          // alignItems: "center",
+          // justifyContent: "center",
+        }
+      }
       onClick={onClick}
     >
-      <IoIosArrowDropleftCircle className=" text-3xl text-white" />
+      <IoIosArrowDroprightCircle className=" lg:text-6xl md:text-5xl text-white" />
     </div>
   );
 }
@@ -43,23 +46,23 @@ function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={className}
-      style={{
-        ...style,
-        display: "block",
-        top: -80,
-        right: 160,
-        width: 30,
-        borderRadius: 100,
-        zIndex: "10",
-        left: "unset",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
+      className={`${className} custom-prev-arrow`}
+      // style={{
+      //   ...style,
+      //   display: "block",
+      //   top: -80,
+      //   right: 160,
+      //   width: 30,
+      //   borderRadius: 100,
+      //   zIndex: "10",
+      //   left: "unset",
+      //   display: "flex",
+      //   alignItems: "center",
+      //   justifyContent: "center",
+      // }}
       onClick={onClick}
     >
-      <IoIosArrowDropleftCircle className=" text-3xl text-white" />
+      <IoIosArrowDropleftCircle className=" lg:text-6xl md:text-5xl text-white" />
     </div>
   );
 }
@@ -79,9 +82,18 @@ const SliderCardsTwo = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
         },
       },
       {
@@ -104,10 +116,12 @@ const SliderCardsTwo = () => {
   return (
     <div>
       <div className="relative">
-        <div className="slider-container overflow-x-hidden py-20">
+        <div className="slider-container overflow-x-hidden lg:py-20 md:py-14 py-2">
           <div className="container mx-auto max-w-[1400px] w-[100%] lg:w-[88%] lg:mx-auto pb-12">
             <div className="flex items-center gap-5">
-              <h2 className="text-5xl font-black uppercase">Newest releases</h2>
+              <h2 className="lg:text-5xl md:text-3xl text-2xl mx-4 md:mx-4 font-black uppercase">
+                Newest releases
+              </h2>
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
